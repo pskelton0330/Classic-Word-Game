@@ -2,3 +2,5 @@
 
 .drag-ghost{position:fixed;z-index:9999;pointer-events:none;width:48px;height:48px;transform:translate(-50%,-50%) rotate(-7deg);box-shadow:0 8px 20px #0008;opacity:.96} .rack .tile{touch-action:none;user-select:none}
 html,body{touch-action:pan-x pan-y}.rack .tile{touch-action:none}.drag-ghost{will-change:left,top;}
+
+.exchange-selected{outline:3px solid #e39a00;outline-offset:1px;transform:translateY(-5px)}.exchange-panel{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:10px}.exchange-panel p{width:100%;text-align:center;margin:3px}.exchange-panel button{padding:10px 14px;border-radius:9px}.exchange-panel button:disabled{opacity:.45;cursor:not-allowed}
