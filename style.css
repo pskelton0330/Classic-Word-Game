@@ -33,3 +33,5 @@ html,body{touch-action:pan-x pan-y}.rack .tile{touch-action:none}.drag-ghost{wil
 .game-bottom .actions [data-action="exchange"]{display:flex;align-items:center;justify-content:center;gap:4px}.bag-count{min-width:20px;height:20px;display:inline-grid;place-items:center;padding:0 4px;border:1px solid #efcf77;border-radius:10px;background:linear-gradient(#f9e8ad,#cf9d42);color:#573b12;font-size:11px;font-weight:800;line-height:1}
 
 .top-action:disabled{opacity:1;cursor:default}.top-person{position:relative;width:42px;height:46px;font-size:0}.top-person::before{content:"";position:absolute;top:3px;left:13px;width:17px;height:17px;border-radius:50%;background:linear-gradient(#ffe78b,#efa927);box-shadow:0 1px 2px #5b2700}.top-person::after{content:"";position:absolute;bottom:4px;left:5px;width:33px;height:20px;border-radius:18px 18px 6px 6px;background:linear-gradient(#ffe78b,#efa927);box-shadow:0 1px 2px #5b2700}
+
+@media(max-width:600px){.game-bottom{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 24px)}.home{padding-top:max(12px,env(safe-area-inset-top,0px))}.game-screen>.bar,.dictionary-header{padding-top:max(8px,env(safe-area-inset-top,0px))}}
