@@ -22,7 +22,7 @@ test('first play must cover the center and form a valid word', () => {
     true,
   );
   assert.equal(
-    validateMove(board, [playTile(111, 'A'), playTile(112, 'T')], true, lexicon).reason,
+    validateMove(board, [playTile(110, 'A'), playTile(111, 'T')], true, lexicon).reason,
     'The first word must cover the center star.',
   );
 });
@@ -82,5 +82,5 @@ test('scores double letter, double word, and triple word premiums', () => {
 test('adds the 50 point bonus when all seven rack tiles are played', () => {
   const board = emptyBoard();
   const placements = Array.from({ length: 7 }, (_, i) => playTile(106 + i, 'A'));
-  assert.equal(scoreMove(board, placements, [{ cells: placements.map((p) => p.index) }]), 71);
+  assert.equal(scoreMove(board, placements, [{ cells: placements.map((p) => p.index) }]), 66);
 });
